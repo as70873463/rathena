@@ -15355,7 +15355,7 @@ void clif_mail_getattachment(struct map_session_data* sd, struct mail_message *m
 	p->MailID = msg->id;
 	p->opentype = msg->type;
 	p->result = result;
-	WFIFOSET(fd, sizeof(*p));5
+	WFIFOSET(fd, sizeof(*p));
 
 	clif_Mail_refreshinbox( sd, msg->type, 0 );
 #endif
