@@ -979,7 +979,8 @@ bool unit_run(struct block_list *bl, struct map_session_data *sd, enum sc_type t
  * @param dist: How far bl should run
  * @return 1: Success 0: Fail
  */
-int unit_escape(struct block_list *bl, struct block_list *target, short dist)
+ int unit_escape(struct block_list *bl, struct block_list *target, short dist, uint8 flag)
+
 {
 	uint8 dir = map_calc_dir(target, bl->x, bl->y);
 
@@ -1546,6 +1547,12 @@ int unit_set_walkdelay(struct block_list *bl, t_tick tick, t_tick delay, int typ
 	} else {
 		// Don't set walk delays when already trapped.
 		if (!unit_can_move(bl)) {
+			if (bl->type == BL_MOB) {
+				mob_data *md = BL_CAST(BL_MOB, bl);
+
+1				if (md && md->state.alchemist == 1) // Sphere Mine needs to escape, don't stop it
+					return 0;
+			}
 			unit_stop_walking(bl,4); //Unit might still be moving even though it can't move
 			return 0;
 		}
