@@ -1,0 +1,4 @@
+userid: s1-kk
+passwd: p1-kk
+char_ip: 127.0.0.1
+map_ip: 127.0.0.1

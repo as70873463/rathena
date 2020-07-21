@@ -1,0 +1,8 @@
+userid: s1-kk
+passwd: p1-kk
+login_ip: 127.0.0.1
+char_ip: 127.0.0.1
+server_name: KoolRO
+pincode_enabled: no
+char_name_letters: @#
+char_name_option: 2
