@@ -8800,7 +8800,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 		break;
 
 	case NPC_RUN:
-5		if (md) {
+		if (md) {
 			block_list* tbl = map_id2bl(md->target_id);
 
 			if (tbl) {
