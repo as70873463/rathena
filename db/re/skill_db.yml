@@ -9951,6 +9951,7 @@ Body:
     Hit: Single
     HitCount: 1
     Duration1: 30000
+    Duration2: 30000
     FixedCastTime: 700
     CastTimeFlags:
       IgnoreDex: true
