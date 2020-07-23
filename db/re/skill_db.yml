@@ -9951,6 +9951,7 @@ Body:
     Hit: Single
     HitCount: 1
     Duration1: 30000
+    Duration2: 30000
     FixedCastTime: 700
     CastTimeFlags:
       IgnoreDex: true
@@ -16829,7 +16830,7 @@ Body:
     Description: Jack Frost 2
     MaxLevel: 5
     Type: Magic
-    TargetType: Self
+    TargetType: Attack
     DamageFlags:
       Splash: true
     Flags:
@@ -16841,13 +16842,13 @@ Body:
       - Level: 1
         Area: 5
       - Level: 2
-        Area: 6
+        Area: 5
       - Level: 3
-        Area: 7
+        Area: 5
       - Level: 4
-        Area: 8
+        Area: 5
       - Level: 5
-        Area: 9
+        Area: 5
     Duration1:
       - Level: 1
         Time: 12500
@@ -18034,8 +18035,9 @@ Body:
     Name: WL_FROSTMISTY
     Description: Frosty Misty
     MaxLevel: 5
+    Range: 11
     Type: Magic
-    TargetType: Self
+    TargetType: Ground
     DamageFlags:
       Splash: true
     Flags:
@@ -18089,8 +18091,9 @@ Body:
     Name: WL_JACKFROST
     Description: Jack Frost
     MaxLevel: 5
+    Range: 11
     Type: Magic
-    TargetType: Self
+    TargetType: Attack
     DamageFlags:
       Splash: true
     Hit: Multi_Hit
@@ -18100,13 +18103,13 @@ Body:
       - Level: 1
         Area: 5
       - Level: 2
-        Area: 6
+        Area: 5
       - Level: 3
-        Area: 7
+        Area: 5
       - Level: 4
-        Area: 8
+        Area: 5
       - Level: 5
-        Area: 9
+        Area: 5
     CopyFlags:
       Skill:
         Reproduce: true
