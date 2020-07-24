@@ -7023,7 +7023,6 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 	case WS_MELTDOWN:
 	case WS_OVERTHRUSTMAX:
 	case ST_REJECTSWORD:
-	case HW_MAGICPOWER:
 	case PF_MEMORIZE:
 	case PA_SACRIFICE:
 	case ASC_EDP:
@@ -7058,6 +7057,7 @@ int skill_castend_nodamage_id (struct block_list *src, struct block_list *bl, ui
 	case NC_SHAPESHIFT:
 	case WL_MARSHOFABYSS:
 	case WL_RECOGNIZEDSPELL:
+	case HW_MAGICPOWER:
 	case GC_VENOMIMPRESS:
 	case SC_DEADLYINFECT:
 	case LG_EXEEDBREAK:
